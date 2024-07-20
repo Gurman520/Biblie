@@ -3,6 +3,9 @@ from APP.Library import Library
 
 
 def menu():
+    """
+    Функция вывода функций программы
+    """
     print("\n** Функции библиотеки: **")
     print("1 - Добавить новую книгу")
     print("2 - Удалить книгу")
@@ -17,6 +20,10 @@ FILE_NAME = environ.get('PATH_DB_Library', 'db/library.json')
 
 
 def main():
+    """
+    Главная функция программы.
+    Считывает номер функции, которую хочет выполнить пользователь.
+    """
     library = Library(FILE_NAME)
     print("Приветсвенное сообщение")
     while True:

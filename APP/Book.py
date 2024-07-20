@@ -1,6 +1,9 @@
 class Book:
-    def __init__(self, book_id, title, author, year, status='в наличии'):
-        self.id = book_id
+    """
+    Кдасс Книга - является базовым классом для каждой книги.
+    """
+    def __init__(self, id, title, author, year, status='в наличии'):
+        self.id = id
         self.title = title
         self.author = author
         self.year = year
